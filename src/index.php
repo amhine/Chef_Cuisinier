@@ -47,7 +47,30 @@
             </div>
         </div>
     </nav>
-     
+    <div class="bg-black py-1 mb-5">
+    <div class="container mx-auto my-10 py-10">
+        <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <!-- Texte -->
+        <div class="text-center lg:text-left">
+            <h1 class="text-5xl font-bold text-white leading-tight animate-slideInLeft">
+            Enjoy Our<br>Delicious Meal
+            </h1>
+            <p class="mt-4 mb-6 text-white leading-relaxed animate-slideInLeft">
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et
+            lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+            </p>
+            <a href="#" class="inline-block bg-gray-800  text-white font-semibold py-3 px-5 rounded-md hover:bg-blue-700 animate-slideInLeft">
+            Book A Table
+            </a>
+        </div>
+        <!-- Image -->
+        <div class="text-center lg:text-right overflow-hidden">
+            <img src="../img/hero.png" alt="Delicious Meal" class="w-full max-w-lg mx-auto lg:mx-0">
+        </div>
+        </div>
+    </div>
+</div>
+
     
 
     <footer>

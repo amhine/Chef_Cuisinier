@@ -51,7 +51,7 @@
       </div>
       <p class="mt-4 text-center text-sm text-gray-500">
         Don't have an account yet?
-        <a href="#!" class="font-semibold text-gray-600 hover:underline">Sign up</a>.
+        <a href="siginup.php" class="font-semibold text-gray-600 hover:underline">Sign up</a>.
       </p>
     </form>
   </div>
