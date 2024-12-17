@@ -51,7 +51,7 @@
     
 
     <footer>
-        <div class="bg-black text-white pt-5 mt-5 animate-fadeIn h-[500px]">
+        <div class="bg-black text-white pt-5 mt-5 animate-fadeIn ">
             <div class="container mx-auto py-5">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div>
@@ -91,9 +91,9 @@
                     </div>
                 </div>
             </div>
-            <div class="container mx-auto mt-8">
+            <div class="container mx-auto mt-8 ">
                 <div class="border-t border-gray-700 pt-4 text-white">
-                    <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="flex flex-col md:flex-row items-center justify-between ">
                         <div class="text-center md:text-left mb-4 md:mb-0">
                             <p>
                                 © <a href="#" class="text-primary border-b border-primary">Your Site Name</a>, All Right Reserved.
