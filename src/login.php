@@ -1,49 +1,60 @@
-<?php
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Login Page with Username and Password</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="output.css">
 </head>
-<body class="flex items-center justify-center min-h-screen bg-gray-800 text-gray-400">
-
-  <div class="w-11/12 max-w-sm mx-auto">
-    <form action="https://httpbin.org/post" method="POST" class="bg-gray-900 p-8 rounded-lg shadow-md">
-
-      <!-- Username Field -->
-      <div class="mb-4 flex items-center bg-gray-700 rounded">
-        <label for="login__username" class="p-4 bg-gray-800 rounded-l">
-          <svg class="w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5zm0 2c-3.87 0-7 3.13-7 7h14c0-3.87-3.13-7-7-7z"/>
-          </svg>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+  <div class="relative mx-auto w-full max-w-md bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:rounded-xl sm:px-10">
+    <div class="text-center">
+      <h1 class="text-3xl font-semibold text-gray-900">Sign in</h1>
+      <p class="mt-2 text-gray-500">Sign in below to access your account</p>
+    </div>
+    <form action="" class="mt-6 flex flex-col">
+      <div class="relative mt-6">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email Address"
+          class="peer w-full border-b-2 border-gray-300 py-2 placeholder-transparent focus:border-gray-500 focus:outline-none"
+        />
+        <label
+          for="email"
+          class="absolute top-0 left-0 transform -translate-y-1/2 text-sm text-gray-800 transition-all duration-200 ease-in-out peer-placeholder-shown:translate-y-2 peer-placeholder-shown:text-gray-500 peer-focus:-translate-y-1/2 peer-focus:text-sm peer-focus:text-gray-800"
+        >
+          Email Address
         </label>
-        <input id="login__username" type="text" name="username" class="w-full p-3 bg-gray-700 text-gray-200 focus:outline-none focus:ring focus:ring-pink-500 rounded-r" placeholder="Username" required>
       </div>
-
-      <!-- Password Field -->
-      <div class="mb-6 flex items-center bg-gray-700 rounded">
-        <label for="login__password" class="p-4 bg-gray-800 rounded-l">
-          <svg class="w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2a5 5 0 00-5 5v3H5a2 2 0 00-2 2v8a2 2 0 002 2h14a2 2 0 002-2v-8a2 2 0 00-2-2h-2V7a5 5 0 00-5-5zm3 8H9V7a3 3 0 016 0v3z"/>
-          </svg>
+      <div class="relative mt-6">
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          class="peer w-full border-b-2 border-gray-300 py-2 placeholder-transparent focus:border-gray-500 focus:outline-none"
+        />
+        <label
+          for="password"
+          class="absolute top-0 left-0 transform -translate-y-1/2 text-sm text-gray-800 transition-all duration-200 ease-in-out peer-placeholder-shown:translate-y-2 peer-placeholder-shown:text-gray-500 peer-focus:-translate-y-1/2 peer-focus:text-sm peer-focus:text-gray-800"
+        >
+          Password
         </label>
-        <input id="login__password" type="password" name="password" class="w-full p-3 bg-gray-700 text-gray-200 focus:outline-none focus:ring focus:ring-pink-500 rounded-r" placeholder="Password" required>
       </div>
-
-      <!-- Submit Button -->
-      <div>
-        <input type="submit" value="Sign In" class="w-full py-3 bg-pink-600 hover:bg-pink-700 text-white font-bold rounded-lg cursor-pointer">
+      <div class="mt-6">
+        <button type="submit" class="w-full rounded-md bg-black px-3 py-4 text-white hover:bg-gray-700 focus:outline-none">
+          Sign in
+        </button>
       </div>
+      <p class="mt-4 text-center text-sm text-gray-500">
+        Don't have an account yet?
+        <a href="#!" class="font-semibold text-gray-600 hover:underline">Sign up</a>.
+      </p>
     </form>
-
-    <!-- Footer Text -->
-    <p class="text-center text-sm mt-6">
-      Not a member? 
-      <a href="#" class="text-pink-500 hover:underline">Sign up now</a>
-    </p>
   </div>
 </body>
+
 </html>
