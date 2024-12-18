@@ -21,17 +21,18 @@
           
             <ul class="hidden md:flex space-x-12  ">
                 <li>
-                <a href="#home" class="text-white text-lg font-bold">Home</a>
+                <a href="index.php" class="text-white text-lg font-bold">Home</a>
                 </li>
                 
+                
                 <li>
-                <a href="#services" class="text-white text-lg font-bold">Services</a>
+                <a href="menu.php" class="text-white text-lg font-bold"> Menu</a>
                 </li>
                 <li>
-                <a href="#menu" class="text-white text-lg font-bold"> Menu</a>
+                <a href="#services" class="text-white text-lg font-bold">Reservation</a>
                 </li>
                 <li>
-                <a href="#" class="text-white text-lg font-bold">Contact</a>
+                <a href="contact.php" class="text-white text-lg font-bold">Contact</a>
                 </li>
             </ul>
       
@@ -46,33 +47,153 @@
         </div>
     </nav>
     <div class="bg-black py-1 mb-5">
-    <div class="container mx-auto my-10 py-10">
-        <div class="grid lg:grid-cols-2 gap-10 items-center">
-        <!-- Texte -->
-        <div class="text-center lg:text-left">
-            <h1 class="text-5xl font-bold text-white leading-tight animate-slideInLeft">
-            Enjoy Our<br>Delicious Meal
-            </h1>
-            <p class="mt-4 mb-6 text-white leading-relaxed animate-slideInLeft">
-            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et
-            lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
-            </p>
-            <a href="#" class="inline-block bg-gray-800  text-white font-semibold py-3 px-5 rounded-md hover:bg-blue-700 animate-slideInLeft">
-            Book A Table
-            </a>
-        </div>
-        <!-- Image -->
-        <div class="text-center lg:text-right overflow-hidden">
-            <img src="../img/hero.png" alt="Delicious Meal" class="w-full max-w-lg mx-auto lg:mx-0">
-        </div>
+        <div class="container mx-auto my-10 py-10">
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+            <!-- Texte -->
+            <div class="text-center lg:text-left">
+                <h1 class="text-5xl font-bold text-white leading-tight animate-slideInLeft">
+                Enjoy Our<br>Delicious Meal
+                </h1>
+                <p class="mt-4 mb-6 text-white leading-relaxed animate-slideInLeft">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et
+                lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+                </p>
+                <a href="#" class="inline-block bg-gray-800  text-white font-semibold py-3 px-5 rounded-md hover:bg-blue-700 animate-slideInLeft">
+                Book A Table
+                </a>
+            </div>
+            <!-- Image -->
+            <div class="text-center lg:text-right overflow-hidden">
+                <img src="../img/hero.png" alt="Delicious Meal" class="w-full max-w-lg mx-auto lg:mx-0">
+            </div>
+            </div>
         </div>
     </div>
-</div>
+    <div class="container mx-auto py-10">
+        <div class="px-4">
+            <div class="flex flex-wrap md:flex-nowrap gap-5 items-center">
+                <!-- Images Section -->
+                <div class="w-full lg:w-1/2">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-start">
+                            <img class="w-full rounded-lg animate-zoomIn" src="../img/about-1.jpg" alt="About Image 1">
+                        </div>
+                        <div class="text-start">
+                            <img class="w-3/4 rounded-lg animate-zoomIn mt-6" src="../img/about-2.jpg" alt="About Image 2">
+                        </div>
+                        <div class="text-end">
+                            <img class="w-3/4 rounded-lg animate-zoomIn" src="../img/about-3.jpg" alt="About Image 3">
+                        </div>
+                        <div class="text-end">
+                            <img class="w-full rounded-lg animate-zoomIn" src="../img/about-4.jpg" alt="About Image 4">
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Text Section -->
+                <div class="w-full lg:w-1/2">
+                    <h5 class="text-lg font-secondary text-start text-primary font-normal">About Us</h5>
+                    <h1 class="text-4xl font-bold mb-4">
+                        Welcome to <i class="fa fa-utensils text-primary"></i> Restaurante
+                    </h1>
+                    <p class="mb-4">
+                    Découvrez une expérience culinaire unique où tradition et modernité se rencontrent. Situé au cœur de Restaurante, notre restaurant vous propose une cuisine authentique préparée avec des ingrédients frais et locaux.
+
+                        Savourez des plats soigneusement élaborés par nos chefs talentueux, dans une ambiance chaleureuse et conviviale. Que ce soit pour un dîner romantique, une sortie entre amis ou un repas d'affaires, Restaurante est l'endroit idéal pour tous vos moments gourmands.</p>
+
+                    <!-- Stats Section -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                        <div class="flex items-center border-l-4 border-primary pl-4">
+                            <h1 class="text-5xl text-primary font-bold">15</h1>
+                            <div class="pl-4">
+                                <p class="text-gray-600 mb-1">Years of</p>
+                                <h6 class="text-lg font-medium uppercase">Experience</h6>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <!-- Button -->
+                    <a class="bg-primary text-white py-3 px-5 rounded-md hover:bg-primary-dark transition" href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="relative isolate bg-white">
+        <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
+            <div class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-32">
+            <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
+                
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900">Contact Us</h2>
+                <p class="mt-6 text-lg leading-8 text-gray-600">Feel free to reach out to us for any inquiries or assistance.
+                We're here to help!</p>
+                <dl class="mt-10 space-y-4 text-base leading-7 text-gray-600">
+                <div class="flex gap-x-4">
+                    <dt class="flex-none">
+                    <span class="sr-only">Email</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" aria-hidden="true" class="h-7 w-6 text-gray-400">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75">
+                        </path>
+                    </svg>
+                    </dt>
+                    <dd><a class="hover:text-gray-900" href="mailto:contact@yourcompany.com">contact@yourcompany.com</a></dd>
+                </div>
+                <div class="flex gap-x-4">
+                    <dt class="flex-none">
+                    <span class="sr-only">Address</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" aria-hidden="true" class="h-7 w-6 text-gray-400">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z">
+                        </path>
+                    </svg>
+                    </dt>
+                    <dd>123 Main Street, Cityville, Country</dd>
+                </div>
+                </dl>
+            </div>
+            </div>
+            <form class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-32">
+            <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+                <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                <div>
+                    <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
+                    <div class="mt-2.5">
+                    <input type="text" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" name="firstName">
+                    </div>
+                </div>
+                <div>
+                    <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
+                    <div class="mt-2.5">
+                    <input type="text" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" name="lastName">
+                    </div>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
+                    <div class="mt-2.5">
+                    <input type="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" name="email">
+                    </div>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
+                    <div class="mt-2.5">
+                    <textarea id="message" rows="4" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" name="message"></textarea>
+                    </div>
+                </div>
+                </div>
+                <div class="mt-8 flex justify-end">
+                <button type="submit" class="w-max  rounded-2xl border-2 border-[#0057ff] bg-[#0057ff]  px-5 py-1.5 text-sm font-semibold text-white transition-colors duration-150 ease-in-out hover:border-blue-400 hover:bg-blue-400">Submit</button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
     
 
     <footer>
-        <div class="bg-black text-white pt-5 mt-5 animate-fadeIn ">
+        <div class="bg-black text-white pt-5 md:h-[320px] mt-5 animate-fadeIn ">
             <div class="container mx-auto py-5">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div>
@@ -138,4 +259,22 @@
     </footer>
    
 </body>
+<script>
+module.exports = {
+  theme: {
+    extend: {
+      keyframes: {
+        zoomIn: {
+          '0%': { transform: 'scale(0.5)', opacity: '0' },
+          '100%': { transform: 'scale(1)', opacity: '1' },
+        },
+      },
+      animation: {
+        zoomIn: 'zoomIn 0.5s ease-in-out',
+      },
+    },
+  },
+  plugins: [],
+};
+</script>
 </html>
