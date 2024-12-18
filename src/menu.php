@@ -9,43 +9,65 @@
 </head>
 
 <body>
-    <nav class="bg-black shadow-lg  ">
+    <nav class="bg-black shadow-lg">
         <div class="container mx-auto flex items-center justify-between py-4 px-6 md:h-28">
-          
-            <a href="#" class="flex justify-center items-center ">
-                <img  src="../img/icons8-chef.png" class="h-16">
-                <h1 class="text-white text-3xl font-bold">Restaurante</h1>
-            </a>
-            
-          
-      
-          
-            <ul class="hidden md:flex space-x-12  ">
-                <li>
-                <a href="index.php" class="text-white text-lg font-bold">Home</a>
-                </li>
                 
-                
+            <div class="flex items-center">
+                <a href="#" class="flex items-center space-x-2">
+                    <img src="../img/icons8-chef.png" class="h-16" alt="Logo">
+                    <h1 class="text-white text-3xl font-bold">Restaurante</h1>
+                </a>
+            </div>
+
+                <!-- Liens de navigation pour écrans moyens et larges -->
+            <ul class="hidden md:flex space-x-12">
                 <li>
-                <a href="menu.php" class="text-white text-lg font-bold"> Menu</a>
+                    <a href="index.php" class="text-white text-lg font-bold">Home</a>
                 </li>
                 <li>
-                <a href="#services" class="text-white text-lg font-bold">Reservation</a>
+                    <a href="menu.php" class="text-white text-lg font-bold">Menu</a>
                 </li>
                 <li>
-                <a href="#" class="text-white text-lg font-bold">Contact</a>
+                    <a href="#services" class="text-white text-lg font-bold">Reservation</a>
+                </li>
+                <li>
+                    <a href="contact.php" class="text-white text-lg font-bold">Contact</a>
                 </li>
             </ul>
-      
-          
-            <div class="flex items-center space-x-4">
-                <button class="block md:hidden">
-                <span class="block w-6 h-0.5 bg-gray-700 mb-1"></span>
-                <span class="block w-6 h-0.5 bg-gray-700 mb-1"></span>
-                <span class="block w-6 h-0.5 bg-gray-700"></span>
-                </button>
+
+                <!-- Bouton de connexion (visible uniquement sur écrans moyens et larges) -->
+            <a href="siginup.php"  class="hidden md:block bg-amber-600 py-2 px-4 text-white text-sm rounded-full border-2 border-amber-600 font-bold">
+                Connexion
+            </a>
+
+                <!-- Menu burger pour mobiles -->
+            <div class="relative md:hidden">
+                <button id="burger-menu" class="block">
+                        <span class="block w-6 h-0.5 bg-gray-700 mb-1"></span>
+                        <span class="block w-6 h-0.5 bg-gray-700 mb-1"></span>
+                        <span class="block w-6 h-0.5 bg-gray-700"></span>
+                    </button>
+
+                    <!-- Menu déroulant pour mobile -->
+                    <ul id="mobile-menu" class="hidden absolute right-0 top-full mt-2 w-48 bg-black text-white rounded-lg shadow-lg">
+                        <li class="border-b border-gray-700">
+                            <a href="index.php" class="block px-4 py-2">Home</a>
+                        </li>
+                        <li class="border-b border-gray-700">
+                            <a href="menu.php" class="block px-4 py-2">Menu</a>
+                        </li>
+                        <li class="border-b border-gray-700">
+                            <a href="#services" class="block px-4 py-2">Reservation</a>
+                        </li>
+                        <li class="border-b border-gray-700">
+                            <a href="contact.php" class="block px-4 py-2">Contact</a>
+                        </li>
+                        <li>
+                            <a href="" class="block px-4 py-2 bg-amber-600 rounded-full text-center">Connexion</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
     </nav>
     <div class="w-full  py-5 bg-black hero-header mb-5">
         <div class="container mx-auto text-center my-5 pt-5 pb-4">
@@ -541,7 +563,7 @@
         </div>
     </div>
 
-    
+
     <footer>
         <div class="bg-black text-white pt-5 mt-5 animate-fadeIn h-[320px] ">
             <div class="container mx-auto py-5">
