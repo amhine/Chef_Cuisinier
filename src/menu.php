@@ -28,7 +28,7 @@
                     <a href="menu.php" class="text-white text-lg font-bold">Menu</a>
                 </li>
                 <li>
-                    <a href="#services" class="text-white text-lg font-bold">Reservation</a>
+                    <a href="reservation.php" class="text-white text-lg font-bold">Reservation</a>
                 </li>
                 <li>
                     <a href="contact.php" class="text-white text-lg font-bold">Contact</a>
@@ -84,485 +84,495 @@
 
     <div class="tab-content">
         <div id="tab-1" class="tab-pane fade show p-0 active">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 m-8">
-                <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-1.jpg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                        <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
+            <h1 class="text-3xl font-bold text-center my-6">Plats principaux</h1>
+            <div class="reservation-card bg-white border border-gray-300 rounded-lg shadow-lg p-6 hover:shadow-xl transition-transform transform hover:-translate-y-2">
 
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-2.jpg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                    <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 m-8">
+                    <div class="flex items-center">
+                        <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-1.jpg" alt="">
+                        <div class="flex-1 flex flex-col text-start pl-4">
+                            <div class="flex justify-between items-center border-b pb-2">
+                                <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                <span class="text-primary font-semibold">$115</span>
+                            </div>
 
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-3.jpg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                    <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
-
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-4.jpg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                    <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
-
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-5.jpg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                    <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
-
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-6.jpg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                    <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
-
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-7.jpg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                    <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
-
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-8.jpg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                    <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
-
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
-                        </div>
-                    </div>
-                </div>
                 
+                            <div class="flex justify-between items-center pt-2">
+                                <small class="italic text-gray-600 flex-1">
+                                    Ipsum ipsum clita erat amet dolor justo diam
+                                </small>
+                                <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                    Order 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-2.jpg" alt="">
+                        <div class="flex-1 flex flex-col text-start pl-4">
+                        <div class="flex justify-between items-center border-b pb-2">
+                                <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                <span class="text-primary font-semibold">$115</span>
+                            </div>
+
+                
+                            <div class="flex justify-between items-center pt-2">
+                                <small class="italic text-gray-600 flex-1">
+                                    Ipsum ipsum clita erat amet dolor justo diam
+                                </small>
+                                <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                    Order 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-3.jpg" alt="">
+                        <div class="flex-1 flex flex-col text-start pl-4">
+                        <div class="flex justify-between items-center border-b pb-2">
+                                <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                <span class="text-primary font-semibold">$115</span>
+                            </div>
+
+                
+                            <div class="flex justify-between items-center pt-2">
+                                <small class="italic text-gray-600 flex-1">
+                                    Ipsum ipsum clita erat amet dolor justo diam
+                                </small>
+                                <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                    Order 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-4.jpg" alt="">
+                        <div class="flex-1 flex flex-col text-start pl-4">
+                        <div class="flex justify-between items-center border-b pb-2">
+                                <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                <span class="text-primary font-semibold">$115</span>
+                            </div>
+
+                
+                            <div class="flex justify-between items-center pt-2">
+                                <small class="italic text-gray-600 flex-1">
+                                    Ipsum ipsum clita erat amet dolor justo diam
+                                </small>
+                                <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                    Order 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-5.jpg" alt="">
+                        <div class="flex-1 flex flex-col text-start pl-4">
+                        <div class="flex justify-between items-center border-b pb-2">
+                                <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                <span class="text-primary font-semibold">$115</span>
+                            </div>
+
+                
+                            <div class="flex justify-between items-center pt-2">
+                                <small class="italic text-gray-600 flex-1">
+                                    Ipsum ipsum clita erat amet dolor justo diam
+                                </small>
+                                <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                    Order 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-6.jpg" alt="">
+                        <div class="flex-1 flex flex-col text-start pl-4">
+                        <div class="flex justify-between items-center border-b pb-2">
+                                <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                <span class="text-primary font-semibold">$115</span>
+                            </div>
+
+                
+                            <div class="flex justify-between items-center pt-2">
+                                <small class="italic text-gray-600 flex-1">
+                                    Ipsum ipsum clita erat amet dolor justo diam
+                                </small>
+                                <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                    Order 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-7.jpg" alt="">
+                        <div class="flex-1 flex flex-col text-start pl-4">
+                        <div class="flex justify-between items-center border-b pb-2">
+                                <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                <span class="text-primary font-semibold">$115</span>
+                            </div>
+
+                
+                            <div class="flex justify-between items-center pt-2">
+                                <small class="italic text-gray-600 flex-1">
+                                    Ipsum ipsum clita erat amet dolor justo diam
+                                </small>
+                                <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                    Order 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-8.jpg" alt="">
+                        <div class="flex-1 flex flex-col text-start pl-4">
+                        <div class="flex justify-between items-center border-b pb-2">
+                                <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                <span class="text-primary font-semibold">$115</span>
+                            </div>
+
+                
+                            <div class="flex justify-between items-center pt-2">
+                                <small class="italic text-gray-600 flex-1">
+                                    Ipsum ipsum clita erat amet dolor justo diam
+                                </small>
+                                <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                    Order 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </div>
-
 
         <div id="tab-2" class="tab-pane fade show p-0">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 m-8">
-                <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/image9.jpeg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                        <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
+            <h1 class="text-3xl font-bold text-center my-6">Salad</h1>
+            <div class="reservation-card bg-white border border-gray-300 rounded-lg shadow-lg p-6 hover:shadow-xl transition-transform transform hover:-translate-y-2">
 
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/img10.jpeg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                    <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 m-8">
+                    
+                    <div class="flex items-center">
+                        <img class="flex-shrink-0 rounded w-20 h-16" src="../img/image9.jpeg" alt="">
+                        <div class="flex-1 flex flex-col text-start pl-4">
+                            <div class="flex justify-between items-center border-b pb-2">
+                                <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                <span class="text-primary font-semibold">$115</span>
+                            </div>
 
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/img11.jpeg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                    <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
-
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/img12.jpeg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                    <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
-
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/img13.jpeg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                    <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
-
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/img14.jpg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                    <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
-
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/img15.jpeg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                    <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
-
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/img17.jpeg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                    <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
-
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
-                        </div>
-                    </div>
-                </div>
                 
+                            <div class="flex justify-between items-center pt-2">
+                                <small class="italic text-gray-600 flex-1">
+                                    Ipsum ipsum clita erat amet dolor justo diam
+                                </small>
+                                <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                    Order 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="flex-shrink-0 rounded w-20 h-16" src="../img/img10.jpeg" alt="">
+                        <div class="flex-1 flex flex-col text-start pl-4">
+                        <div class="flex justify-between items-center border-b pb-2">
+                                <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                <span class="text-primary font-semibold">$115</span>
+                            </div>
+
+                
+                            <div class="flex justify-between items-center pt-2">
+                                <small class="italic text-gray-600 flex-1">
+                                    Ipsum ipsum clita erat amet dolor justo diam
+                                </small>
+                                <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                    Order 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="flex-shrink-0 rounded w-20 h-16" src="../img/img11.jpeg" alt="">
+                        <div class="flex-1 flex flex-col text-start pl-4">
+                        <div class="flex justify-between items-center border-b pb-2">
+                                <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                <span class="text-primary font-semibold">$115</span>
+                            </div>
+
+                
+                            <div class="flex justify-between items-center pt-2">
+                                <small class="italic text-gray-600 flex-1">
+                                    Ipsum ipsum clita erat amet dolor justo diam
+                                </small>
+                                <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                    Order 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="flex-shrink-0 rounded w-20 h-16" src="../img/img12.jpeg" alt="">
+                        <div class="flex-1 flex flex-col text-start pl-4">
+                        <div class="flex justify-between items-center border-b pb-2">
+                                <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                <span class="text-primary font-semibold">$115</span>
+                            </div>
+
+                
+                            <div class="flex justify-between items-center pt-2">
+                                <small class="italic text-gray-600 flex-1">
+                                    Ipsum ipsum clita erat amet dolor justo diam
+                                </small>
+                                <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                    Order 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="flex-shrink-0 rounded w-20 h-16" src="../img/img13.jpeg" alt="">
+                        <div class="flex-1 flex flex-col text-start pl-4">
+                        <div class="flex justify-between items-center border-b pb-2">
+                                <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                <span class="text-primary font-semibold">$115</span>
+                            </div>
+
+                
+                            <div class="flex justify-between items-center pt-2">
+                                <small class="italic text-gray-600 flex-1">
+                                    Ipsum ipsum clita erat amet dolor justo diam
+                                </small>
+                                <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                    Order 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="flex-shrink-0 rounded w-20 h-16" src="../img/img14.jpg" alt="">
+                        <div class="flex-1 flex flex-col text-start pl-4">
+                        <div class="flex justify-between items-center border-b pb-2">
+                                <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                <span class="text-primary font-semibold">$115</span>
+                            </div>
+
+                
+                            <div class="flex justify-between items-center pt-2">
+                                <small class="italic text-gray-600 flex-1">
+                                    Ipsum ipsum clita erat amet dolor justo diam
+                                </small>
+                                <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                    Order 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="flex-shrink-0 rounded w-20 h-16" src="../img/img15.jpeg" alt="">
+                        <div class="flex-1 flex flex-col text-start pl-4">
+                        <div class="flex justify-between items-center border-b pb-2">
+                                <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                <span class="text-primary font-semibold">$115</span>
+                            </div>
+
+                
+                            <div class="flex justify-between items-center pt-2">
+                                <small class="italic text-gray-600 flex-1">
+                                    Ipsum ipsum clita erat amet dolor justo diam
+                                </small>
+                                <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                    Order 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="flex-shrink-0 rounded w-20 h-16" src="../img/img17.jpeg" alt="">
+                        <div class="flex-1 flex flex-col text-start pl-4">
+                        <div class="flex justify-between items-center border-b pb-2">
+                                <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                <span class="text-primary font-semibold">$115</span>
+                            </div>
+
+                
+                            <div class="flex justify-between items-center pt-2">
+                                <small class="italic text-gray-600 flex-1">
+                                    Ipsum ipsum clita erat amet dolor justo diam
+                                </small>
+                                <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                    Order 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </div>
-
         <div id="tab-3" class="tab-pane fade show p-0">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 m-8">
-            <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des1.jpeg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                        <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
+            <h1 class="text-3xl font-bold text-center my-6">Dessert</h1>
+            <div class="reservation-card bg-white border border-gray-300 rounded-lg shadow-lg p-6 hover:shadow-xl transition-transform transform hover:-translate-y-2">
 
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des2.jpeg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                    <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 m-8">
+                    <div class="flex items-center">
+                            <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des1.jpeg" alt="">
+                            <div class="flex-1 flex flex-col text-start pl-4">
+                                <div class="flex justify-between items-center border-b pb-2">
+                                    <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                    <span class="text-primary font-semibold">$115</span>
+                                </div>
 
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
+                    
+                                <div class="flex justify-between items-center pt-2">
+                                    <small class="italic text-gray-600 flex-1">
+                                        Ipsum ipsum clita erat amet dolor justo diam
+                                    </small>
+                                    <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                        Order 
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des3.jpeg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                        <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
+                        <div class="flex items-center">
+                            <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des2.jpeg" alt="">
+                            <div class="flex-1 flex flex-col text-start pl-4">
+                            <div class="flex justify-between items-center border-b pb-2">
+                                    <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                    <span class="text-primary font-semibold">$115</span>
+                                </div>
 
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
+                    
+                                <div class="flex justify-between items-center pt-2">
+                                    <small class="italic text-gray-600 flex-1">
+                                        Ipsum ipsum clita erat amet dolor justo diam
+                                    </small>
+                                    <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                        Order 
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des4.jpeg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                        <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
+                        <div class="flex items-center">
+                            <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des3.jpeg" alt="">
+                            <div class="flex-1 flex flex-col text-start pl-4">
+                                <div class="flex justify-between items-center border-b pb-2">
+                                    <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                    <span class="text-primary font-semibold">$115</span>
+                                </div>
 
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
+                    
+                                <div class="flex justify-between items-center pt-2">
+                                    <small class="italic text-gray-600 flex-1">
+                                        Ipsum ipsum clita erat amet dolor justo diam
+                                    </small>
+                                    <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                        Order 
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des5.jpg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                    <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
+                        <div class="flex items-center">
+                            <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des4.jpeg" alt="">
+                            <div class="flex-1 flex flex-col text-start pl-4">
+                                <div class="flex justify-between items-center border-b pb-2">
+                                    <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                    <span class="text-primary font-semibold">$115</span>
+                                </div>
 
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
+                    
+                                <div class="flex justify-between items-center pt-2">
+                                    <small class="italic text-gray-600 flex-1">
+                                        Ipsum ipsum clita erat amet dolor justo diam
+                                    </small>
+                                    <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                        Order 
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des6.jpeg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                    <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
+                        <div class="flex items-center">
+                            <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des5.jpg" alt="">
+                            <div class="flex-1 flex flex-col text-start pl-4">
+                            <div class="flex justify-between items-center border-b pb-2">
+                                    <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                    <span class="text-primary font-semibold">$115</span>
+                                </div>
 
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
+                    
+                                <div class="flex justify-between items-center pt-2">
+                                    <small class="italic text-gray-600 flex-1">
+                                        Ipsum ipsum clita erat amet dolor justo diam
+                                    </small>
+                                    <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                        Order 
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des9.jpeg" alt="">
-                    <div class="flex-1 flex flex-col text-start pl-4">
-                    <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
+                        <div class="flex items-center">
+                            <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des6.jpeg" alt="">
+                            <div class="flex-1 flex flex-col text-start pl-4">
+                            <div class="flex justify-between items-center border-b pb-2">
+                                    <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                    <span class="text-primary font-semibold">$115</span>
+                                </div>
 
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
+                    
+                                <div class="flex justify-between items-center pt-2">
+                                    <small class="italic text-gray-600 flex-1">
+                                        Ipsum ipsum clita erat amet dolor justo diam
+                                    </small>
+                                    <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                        Order 
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des11.jpeg" alt="Image of Chicken Burger">
-        
-        
-                    <div class="flex-1 flex flex-col text-start pl-4">
-            
-                        <div class="flex justify-between items-center border-b pb-2">
-                            <h5 class="font-medium text-lg">Chicken Burger</h5>
-                            <span class="text-primary font-semibold">$115</span>
-                        </div>
+                        <div class="flex items-center">
+                            <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des9.jpeg" alt="">
+                            <div class="flex-1 flex flex-col text-start pl-4">
+                            <div class="flex justify-between items-center border-b pb-2">
+                                    <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                    <span class="text-primary font-semibold">$115</span>
+                                </div>
 
-            
-                        <div class="flex justify-between items-center pt-2">
-                            <small class="italic text-gray-600 flex-1">
-                                Ipsum ipsum clita erat amet dolor justo diam
-                            </small>
-                            <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
-                                Order 
-                            </button>
+                    
+                                <div class="flex justify-between items-center pt-2">
+                                    <small class="italic text-gray-600 flex-1">
+                                        Ipsum ipsum clita erat amet dolor justo diam
+                                    </small>
+                                    <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                        Order 
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-            </div>
-
+                        <div class="flex items-center space-x-4">
+                            <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des11.jpeg" alt="Image of Chicken Burger">
                 
+                
+                            <div class="flex-1 flex flex-col text-start pl-4">
+                    
+                                <div class="flex justify-between items-center border-b pb-2">
+                                    <h5 class="font-medium text-lg">Chicken Burger</h5>
+                                    <span class="text-primary font-semibold">$115</span>
+                                </div>
+
+                    
+                                <div class="flex justify-between items-center pt-2">
+                                    <small class="italic text-gray-600 flex-1">
+                                        Ipsum ipsum clita erat amet dolor justo diam
+                                    </small>
+                                    <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300  px-4 py-2 w-24 rounded-3xl text-sm "role="button"aria-label="Order Chicken Burger">
+                                        Order 
+                                    </button>
+                                </div>
+                            </div>
+                    </div>
+
+                    
+                </div>
             </div>
         </div>
     </div>
-
 
     <footer>
         <div class="bg-black text-white pt-5 mt-5 animate-fadeIn h-[320px] ">

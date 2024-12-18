@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="output.css">
     </head>
     <body>
+        
     <nav class="bg-black shadow-lg">
         <div class="container mx-auto flex items-center justify-between py-4 px-6 md:h-28">
             <!-- Logo et nom -->
@@ -27,7 +28,7 @@
                     <a href="menu.php" class="text-white text-lg font-bold">Menu</a>
                 </li>
                 <li>
-                    <a href="#services" class="text-white text-lg font-bold">Reservation</a>
+                    <a href="reservation.php" class="text-white text-lg font-bold">Reservation</a>
                 </li>
                 <li>
                     <a href="contact.php" class="text-white text-lg font-bold">Contact</a>
