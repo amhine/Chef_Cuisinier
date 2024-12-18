@@ -8,53 +8,322 @@
     <link rel="stylesheet" href="output.css">
 </head>
 
-<body class="bg-gray-100 font-sans">
-
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12 px-6">
-    <!-- Carte 1 -->
-    <div class="bg-white border border-gray-100 transition-transform duration-500 hover:shadow-xl hover:scale-105 p-4 rounded-lg relative">
-      <span class="bg-red-100 text-red-500 text-sm font-semibold px-4 py-1 rounded-full inline-block mb-4">Breakfast</span>
-      <img class="w-64 h-64 mx-auto object-cover transform transition duration-300 hover:scale-105" src="./assets/Breakfast/breakfast1.png" alt="Eggs Benedict">
-      <div class="flex flex-col items-center mt-3 space-y-2">
-        <h1 class="text-gray-900 text-lg font-bold">Eggs Benedict</h1>
-        <p class="text-gray-500 text-sm text-center">Savourez un délicieux œuf poché avec une sauce hollandaise maison.</p>
-        <h2 class="text-gray-900 text-2xl font-bold">$8.99</h2>
-        <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-2 rounded-full transition-transform duration-300 hover:scale-105">
-          Order Now
-        </button>
-      </div>
+<body>
+    <nav class="bg-black shadow-lg  ">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6 md:h-28">
+          
+            <a href="#" class="flex justify-center items-center ">
+                <img  src="../img/icons8-chef.png" class="h-16">
+                <h1 class="text-white text-3xl font-bold">Restaurante</h1>
+            </a>
+            
+          
+      
+          
+            <ul class="hidden md:flex space-x-12  ">
+                <li>
+                <a href="#home" class="text-white text-lg font-bold">Home</a>
+                </li>
+                
+                <li>
+                <a href="#services" class="text-white text-lg font-bold">Services</a>
+                </li>
+                <li>
+                <a href="#menu" class="text-white text-lg font-bold"> Menu</a>
+                </li>
+                <li>
+                <a href="#" class="text-white text-lg font-bold">Contact</a>
+                </li>
+            </ul>
+      
+          
+            <div class="flex items-center space-x-4">
+                <button class="block md:hidden">
+                <span class="block w-6 h-0.5 bg-gray-700 mb-1"></span>
+                <span class="block w-6 h-0.5 bg-gray-700 mb-1"></span>
+                <span class="block w-6 h-0.5 bg-gray-700"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="w-full  py-5 bg-black hero-header mb-5">
+        <div class="container mx-auto text-center my-5 pt-5 pb-4">
+            <h1 class="text-5xl md:text-6xl text-amber-600 mb-8 animate__animated animate__fadeInDown font-bold ">Food Menu</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="flex justify-center space-x-4 uppercase text-sm md:text-base ">
+                    <li class="breadcrumb-item"><a href="#" class="text-white hover:underline">Home</a></li>
+                    <li class="breadcrumb-item text-white font-bold" aria-current="page">Menu</li>
+                </ol>
+            </nav>
+        </div>
     </div>
 
-    <!-- Carte 2 -->
-    <div class="bg-white border border-gray-100 transition-transform duration-500 hover:shadow-xl hover:scale-105 p-4 rounded-lg relative">
-      <span class="bg-red-100 text-red-500 text-sm font-semibold px-4 py-1 rounded-full inline-block mb-4">Breakfast</span>
-      <img class="w-64 h-64 mx-auto object-cover transform transition duration-300 hover:scale-105" src="./assets/Breakfast/breakfast2.png" alt="Breakfast Sandwich">
-      <div class="flex flex-col items-center mt-3 space-y-2">
-        <h1 class="text-gray-900 text-lg font-bold">Breakfast Sandwich</h1>
-        <p class="text-gray-500 text-sm text-center">Un sandwich garni d'ingrédients frais et savoureux.</p>
-        <h2 class="text-gray-900 text-2xl font-bold">$9.99</h2>
-        <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-2 rounded-full transition-transform duration-300 hover:scale-105">
-          Order Now
-        </button>
-      </div>
+    <div class="tab-content">
+        <div id="tab-1" class="tab-pane fade show p-0 active">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 m-8">
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-1.jpg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-2.jpg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-3.jpg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-4.jpg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-5.jpg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-6.jpg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-7.jpg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-8.jpg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div id="tab-2" class="tab-pane fade show p-0">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 m-8">
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/image9.jpeg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/img10.jpeg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/img11.jpeg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/img12.jpeg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/img13.jpeg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/img14.jpg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/img15.jpeg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/img17.jpeg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="tab-3" class="tab-pane fade show p-0">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 m-8">
+            <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des1.jpeg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des2.jpeg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des3.jpeg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des4.jpeg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des5.jpg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des6.jpeg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des9.jpeg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img class="flex-shrink-0 rounded w-20 h-16" src="../img/des11.jpeg" alt="">
+                    <div class="flex-1 flex flex-col text-start pl-4">
+                        <h5 class="flex justify-between border-b pb-2">
+                            <span>Chicken Burger</span>
+                            <span class="text-primary">$115</span>
+                        </h5>
+                        
+                        <h5 class="flex justify-between  pb-2">
+                            <small class="italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                            <button class="text-primary bg-amber-600 text-white m-2 w-20 rounded-3xl">order now</button>
+                        </h5>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </div>
 
-    <!-- Carte 3 -->
-    <div class="bg-white border border-gray-100 transition-transform duration-500 hover:shadow-xl hover:scale-105 p-4 rounded-lg relative">
-      <span class="bg-red-100 text-red-500 text-sm font-semibold px-4 py-1 rounded-full inline-block mb-4">Breakfast</span>
-      <img class="w-64 h-64 mx-auto object-cover transform transition duration-300 hover:scale-105" src="./assets/Breakfast/breakfast3.png" alt="Baked Chicken">
-      <div class="flex flex-col items-center mt-3 space-y-2">
-        <h1 class="text-gray-900 text-lg font-bold">Baked Chicken</h1>
-        <p class="text-gray-500 text-sm text-center">Poulet tendre cuit au four avec des épices parfaites.</p>
-        <h2 class="text-gray-900 text-2xl font-bold">$10.99</h2>
-        <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-2 rounded-full transition-transform duration-300 hover:scale-105">
-          Order Now
-        </button>
-      </div>
-    </div>
 
-    <!-- Autres cartes... -->
-  </div>
 </body>
 
 </html>

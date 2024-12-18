@@ -23,9 +23,7 @@
                 <li>
                 <a href="#home" class="text-white text-lg font-bold">Home</a>
                 </li>
-                <li>
-                <a href="#about" class="text-white text-lg font-bold">About</a>
-                </li>
+                
                 <li>
                 <a href="#services" class="text-white text-lg font-bold">Services</a>
                 </li>
