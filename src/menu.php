@@ -10,7 +10,7 @@
 
 <body>
     <nav class="bg-black shadow-lg">
-        <div class="container mx-auto flex items-center justify-between py-4 px-6 md:h-28">
+        <div class=" mx-auto flex items-center justify-between py-4 px-8 md:h-28">
                 
             <div class="flex items-center">
                 <a href="#" class="flex items-center space-x-2">
@@ -20,7 +20,7 @@
             </div>
 
                 <!-- Liens de navigation pour écrans moyens et larges -->
-            <ul class="hidden md:flex space-x-12">
+            <ul class="hidden md:flex space-x-12 ">
                 <li>
                     <a href="index.php" class="text-white text-lg font-bold">Home</a>
                 </li>
@@ -36,9 +36,9 @@
             </ul>
 
                 <!-- Bouton de connexion (visible uniquement sur écrans moyens et larges) -->
-            <a href="siginup.php"  class="hidden md:block bg-amber-600 py-2 px-4 text-white text-sm rounded-full border-2 border-amber-600 font-bold">
+            <!-- <a href="siginup.php"  class="hidden md:block bg-amber-600 py-2 px-4 text-white text-sm rounded-full border-2 border-amber-600 font-bold">
                 Connexion
-            </a>
+            </a> -->
 
                 <!-- Menu burger pour mobiles -->
             <div class="relative md:hidden">

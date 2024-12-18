@@ -10,7 +10,7 @@
     <body>
         
     <nav class="bg-black shadow-lg">
-        <div class="container mx-auto flex items-center justify-between py-4 px-6 md:h-28">
+        <div class=" mx-auto flex items-center justify-between py-4 px-8  md:h-28">
             <!-- Logo et nom -->
             <div class="flex items-center">
                 <a href="#" class="flex items-center space-x-2">
@@ -36,7 +36,7 @@
             </ul>
 
             <!-- Bouton de connexion (visible uniquement sur écrans moyens et larges) -->
-            <a href="siginup.php" class="hidden md:block bg-amber-600 py-2 px-4 text-white text-sm rounded-full border-2 border-amber-600 font-bold">Connexion</a>
+            <!-- <a href="siginup.php" class="hidden md:block bg-amber-600 py-2 px-4 text-white text-sm rounded-full border-2 border-amber-600 font-bold">Connexion</a> -->
 
             <!-- Menu burger pour mobiles -->
             <div class="relative md:hidden">
