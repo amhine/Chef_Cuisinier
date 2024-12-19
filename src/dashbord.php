@@ -77,22 +77,22 @@
     <div class="pt-16 max-w-7xl mx-auto flex">
         <aside class="sidebar fixed lg:static w-[240px] bg-indigo-50 h-[calc(100vh-4rem)] lg:h-auto transform -translate-x-full lg:translate-x-0 transition-transform duration-300 z-45 overflow-y-auto p-4">
             <div class="bg-white rounded-xl shadow-lg mb-6 p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-                <a href="#" class="flex items-center text-gray-600 hover:text-amber-600 py-4 transition-all duration-300 hover:translate-x-1">
-                    <!-- <span class="material-icons-outlined mr-2">dashboard</span> -->
+                <a href="#"  class="flex items-center text-gray-600 hover:text-amber-600 py-4 transition-all duration-300 hover:translate-x-1">
+                    
                     <img src="../img/renomer.png" alt="renomer Icon" class="w-6 h-6 mr-2">
                     Home
                    
                 </a>
                 <a href="#" class="flex items-center text-gray-600 hover:text-amber-600 py-4 transition-all duration-300 hover:translate-x-1">
-                    <!-- <span class="material-icons-outlined mr-2">tune</span> -->
+                    
                     <img src="../img/menu.png" alt="menu Icon" class="w-6 h-6 mr-2">
                     Some menu item
                    
                 </a>
-                <a href="#" class="flex items-center text-gray-600 hover:text-indigo-800 py-4 transition-all duration-300 hover:translate-x-1">
-                    <!-- <span class="material-icons-outlined mr-2">file_copy</span> -->
+                <a href="#"   class="flex items-center text-gray-600 hover:text-indigo-800 py-4 transition-all duration-300 hover:translate-x-1 men">
+                   
                     <img src="../img/fichier.png" alt="Settings Icon" class="w-6 h-6 mr-2">
-                    Another menu item
+                    Another menu 
                    
                 </a>
             </div>
@@ -130,7 +130,7 @@
                         clients inscrits <br><strong>23</strong>
                     </h2>
                     <a href="#" class="inline-block mt-8 px-8 py-2 rounded-full text-xl font-bold text-amber-600 bg-white hover:bg-amber-500 transition-transform duration-300 hover:scale-105">
-                        See messages
+                        See 
                     </a>
                 </div>
             </div>
@@ -148,38 +148,104 @@
             </div>
         </main>
     </div>
+    
+        <form class="flex hidden " id="formulair">
+                <div class="max-w-sm mx-auto mt-20 bg-white rounded-md shadow-md overflow-hidden z-[1]">
+                <div class="px-6 py-4 bg-amber-600 text-white">
+                    <h1 class="flex justify-center font-bold text-white text-2xl">Menu</h1>
+                </div>
+                <div class="px-6 py-4">
 
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="nome">
+                        Nom :
+                        </label>
+                        <input
+                            class="appearance-none border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="text" type="text" placeholder="Nom">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="expiration-date">
+                        Description :
+                        </label>
+                        <input
+                            class="appearance-none border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="description" type="text" placeholder="Description">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="cvv">
+                        URL :
+                        </label>
+                        <input
+                            class="appearance-none border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="url" type="text" placeholder="https://">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="cvv">
+                        prix :
+                        </label>
+                        <input
+                            class="appearance-none border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            type="number" placeholder="Prix">
+                    </div>
+
+                    <div class="flex justify-between mt-6">
+                            
+                                <a  id="hideForm" class="text-white bg-red-600 w-36 rounded-2xl py-2 hover:bg-red-800 cursor-pointer flex justify-center ">Cancel</a>
+                                <button type="submit" class="text-white bg-blue-600 w-36 rounded-2xl py-2 hover:bg-blue-800 cursor-pointer" name="submit">Add</button>
+                            </div>
+                </div>
+            </div>
+        </form>
     <script>
-         document.addEventListener('DOMContentLoaded', () => {
-            const mobileMenuButton = document.querySelector('.mobile-menu-button');
-            const sidebar = document.querySelector('.sidebar');
-        const overlay = document.querySelector('.overlay');
+    //      document.addEventListener('DOMContentLoaded', () => {
+    // const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    // const sidebar = document.querySelector('.sidebar');
+    // const overlay = document.querySelector('.overlay');
 
-        const toggleMobileMenu = () => {
-        sidebar.classList.toggle('translate-x-0');
-        overlay.classList.toggle('hidden');
-        overlay.classList.toggle('opacity-0');
-        document.body.style.overflow = sidebar.classList.contains('translate-x-0') ? 'hidden' : '';
-        };
+    // const toggleMobileMenu = () => {
+    //     sidebar.classList.toggle('translate-x-0');
+    //     overlay.classList.toggle('hidden');
+    //     overlay.classList.toggle('opacity-0');
+    //     document.body.style.overflow = sidebar.classList.contains('translate-x-0') ? 'hidden' : '';
+    // };
 
-        mobileMenuButton.addEventListener('click', toggleMobileMenu);
-        overlay.addEventListener('click', toggleMobileMenu);
+    // mobileMenuButton.addEventListener('click', toggleMobileMenu);
+    // overlay.addEventListener('click', toggleMobileMenu);
 
-        window.addEventListener('resize', () => {
-        if (window.innerWidth >= 1024 && sidebar.classList.contains('translate-x-0')) {
-            toggleMobileMenu();
-        }
-        });
+    // window.addEventListener('resize', () => {
+    //     if (window.innerWidth >= 1024 && sidebar.classList.contains('translate-x-0')) {
+    //         toggleMobileMenu();
+    //     }
+    // });
 
     
-        const notificationIcon = document.querySelector('.material-icons-outlined:nth-child(2)');
-        if (notificationIcon) {
-        setInterval(() => {
-            notificationIcon.classList.add('scale-110');
-            setTimeout(() => notificationIcon.classList.remove('scale-110'), 200);
-        }, 5000);
-        }
+    // const notificationIcon = document.querySelector('.material-icons-outlined:nth-child(2)');
+    // if (notificationIcon) {
+    //     setInterval(() => {
+    //         notificationIcon.classList.add('scale-110');
+    //         setTimeout(() => notificationIcon.classList.remove('scale-110'), 200);
+    //     }, 5000);
+    // }
+
+    
+    const menuLinks = document.querySelectorAll('.flex.items-center.text-gray-600.hover\\:text-indigo-800.py-4.transition-all.duration-300.hover\\:translate-x-1');
+    menuLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+            document.getElementById('formulair').classList.remove('hidden');
         });
+    });
+
+    
+    document.getElementById('hideForm').addEventListener('click', function () {
+        document.getElementById('formulair').classList.add('hidden');
+        document.getElementById('formulair').reset();
+    });
+// });
+
 
     </script>
 </body>
