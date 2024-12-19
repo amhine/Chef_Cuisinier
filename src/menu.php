@@ -82,7 +82,7 @@
         </div>
     </div>
     <form id="formulair" class="fixed top-0 left-0 w-full h-full bg-white bg-opacity-90 z-50 hidden flex items-center justify-center animate-slide-in">
-    <div class="max-w-[800px] w-full max-h-[600px]  bg-white rounded-lg shadow-lg ">
+    <div class="max-w-[800px] w-full max-h-[500px]  bg-white rounded-lg shadow-lg overflow-y-scroll  ">
        <div class="px-8 py-4 bg-amber-600 text-white">
       <h1 class="flex justify-center font-bold text-white text-3xl">Menu</h1>
     </div>
@@ -107,6 +107,18 @@
         <label class="block text-gray-700 font-semibold mb-2" for="prix" id="prix">Prix :</label>
         <input class="appearance-none border border-gray-400 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent" type="number" placeholder="Prix">
         <span id="prixError" class="text-red-500 text-sm hidden">Prix invalid</span>  
+    </div>
+
+    <div class="mb-6">
+        <label class="block text-gray-700 font-semibold mb-2" for="prix" id="prix">nombre de personnes :</label>
+        <input class="appearance-none border border-gray-400 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent" type="number" placeholder="Nombre de personnes">
+        <span id="nombreError" class="text-red-500 text-sm hidden">nombre invalid</span>  
+    </div>
+
+    <div class="mb-6">
+        <label class="block text-gray-700 font-semibold mb-2" for="prix" id="prix">la date et heure</label>
+        <input class="appearance-none border border-gray-400 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent" type="datetime-local" placeholder="la date et heure">
+        <span id="dateError" class="text-red-500 text-sm hidden">Prix invalid</span>  
     </div>
       <div class="flex justify-between mt-8">
         <a id="hideForm" class="text-white bg-red-600 w-40 rounded-lg py-3 hover:bg-red-800 cursor-pointer flex justify-center">
