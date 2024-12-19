@@ -81,7 +81,44 @@
             </nav>
         </div>
     </div>
-
+    <form id="formulair" class="fixed top-0 left-0 w-full h-full bg-white bg-opacity-90 z-50 hidden flex items-center justify-center animate-slide-in">
+    <div class="max-w-[800px] w-full max-h-[600px]  bg-white rounded-lg shadow-lg ">
+       <div class="px-8 py-4 bg-amber-600 text-white">
+      <h1 class="flex justify-center font-bold text-white text-3xl">Menu</h1>
+    </div>
+    <div class="px-8 py-6">
+      <!-- Contenu du formulaire ici -->
+      <div class="mb-6">
+        <label class="block text-gray-700 font-semibold mb-2" for="nome" id="name">Nom :</label>
+        <input class="appearance-none border border-gray-400 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent" id="text" type="text" placeholder="Nom">
+        <span id="nameError" class="text-red-500 text-sm hidden">Name invalid</span>
+    </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 font-semibold mb-2" for="description" id="description">Description :</label>
+        <input class="appearance-none border border-gray-400 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent" id="description" type="text" placeholder="Description">
+        <span id="descriptionError" class="text-red-500 text-sm hidden">Description invalid</span>  
+    </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 font-semibold mb-2" for="url" id="photo">URL :</label>
+        <input class="appearance-none border border-gray-400 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent" id="url" type="text" placeholder="https://">
+        <span id="photoError" class="text-red-500 text-sm hidden">Image invalid</span>  
+    </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 font-semibold mb-2" for="prix" id="prix">Prix :</label>
+        <input class="appearance-none border border-gray-400 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent" type="number" placeholder="Prix">
+        <span id="prixError" class="text-red-500 text-sm hidden">Prix invalid</span>  
+    </div>
+      <div class="flex justify-between mt-8">
+        <a id="hideForm" class="text-white bg-red-600 w-40 rounded-lg py-3 hover:bg-red-800 cursor-pointer flex justify-center">
+          Cancel
+        </a>
+        <button type="submit" class="text-white bg-blue-600 w-40 rounded-lg py-3 hover:bg-blue-800 cursor-pointer" name="submit">
+          Add
+        </button>
+      </div>
+    </div>
+  </div>
+</form>
     <div class="tab-content">
         <div id="tab-1" class="tab-pane fade show p-0 active">
             <h1 class="text-3xl font-bold text-center my-6">Plats principaux</h1>
@@ -639,7 +676,78 @@
         
         
     </footer>
+    <script>
+    
+    const orderButtons = document.querySelectorAll('.text-white.bg-amber-600.hover\\:bg-amber-700.transition-colors.duration-300.px-4.py-2.w-24.rounded-3xl.text-sm');
 
+    
+    orderButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            
+            document.getElementById('formulair').classList.remove('hidden');
+        });
+    });
+
+    
+    document.getElementById('hideForm').addEventListener('click', function () {
+        document.getElementById('formulair').classList.add('hidden');
+    });
+
+   
+    function validateForm() {
+        
+        document.getElementById("nameError").classList.add("hidden");
+        document.getElementById("photoError").classList.add("hidden");
+        document.getElementById("descriptionError").classList.add("hidden");
+        document.getElementById("prixError").classList.add("hidden");
+
+        let valid = true;
+
+        
+        const name = document.getElementById("name").value;
+        const nameRegex = /^[a-zA-Z]*$/;
+        if (!nameRegex.test(name)) {
+            document.getElementById("nameError").classList.remove("hidden");
+            valid = false;
+        }
+
+        const photo = document.getElementById("photo").value;
+        const photoRegex = /^https:\/\//;
+        if (!photoRegex.test(photo)) {
+            document.getElementById("photoError").classList.remove("hidden");
+            valid = false;
+        }
+
+        const description = document.getElementById("description").value;
+        const descriptionRegex = /^[a-zA-Z ]*$/;
+        if (!descriptionRegex.test(description)) {
+            document.getElementById("descriptionError").classList.remove("hidden");
+            valid = false;
+        }
+
+        const prix = document.getElementById("prix").value;
+        const prixRegex = /^\d{1,3}$/;
+        if (!prixRegex.test(prix)) {
+            document.getElementById("prixError").classList.remove("hidden");
+            valid = false;
+        }
+
+        return valid;
+    }
+
+   
+    document.querySelector('button[name="submit"]').addEventListener('click', function (e) {
+        e.preventDefault(); 
+
+        if (validateForm()) {
+            alert("Formulaire valide. Vous pouvez soumettre.");
+           
+        }
+    });
+</script>
+
+ 
+ 
 </body>
 
 </html>

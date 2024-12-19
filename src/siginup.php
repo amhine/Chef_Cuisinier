@@ -13,7 +13,64 @@ include './conexiondata.php';
 // } else {
 //     echo "Méthode de requête non autorisée.";
 // }
+
+//  $id_user = $_GET["id_user"];
+
+// if (isset($_POST["submit"])) {
+//     $name = $_POST['name'];
+//     $email = $_POST['email'];
+//     $pasword = $_POST['mots_passe'];
+
+    
+//     $name = mysqli_real_escape_string($connect, $name);
+//     $email = mysqli_real_escape_string($connect, $email);
+//     $pasword  = mysqli_real_escape_string($connect, $pasword );
+
+   
+//     $sql = "UPDATE `utilisateur` SET `email`='$email', `name`='$name', `pasword `='$pasword ' WHERE `id_user` = $id_user";
+
+  
+//     $resul = mysqli_query($connect, $sql);
+
+//     if ($resul) {
+//         header("Location: index.php?msg=Data updated successfully");
+//     } else {
+//         echo "Failed: " . mysqli_error($connect);
+//     }
+// }
+include './conexiondata.php'; // Inclure la connexion à la base de données
+
+if (isset($_POST["submit"])) {
+    // Récupérer les données du formulaire
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $password = $_POST['mots_passe'];
+
+    // Sécuriser les données contre les injections SQL
+    $name = mysqli_real_escape_string($connect, $name);
+    $email = mysqli_real_escape_string($connect, $email);
+    $password = mysqli_real_escape_string($connect, $password);
+
+    // Hash du mot de passe pour le stocker en sécurité (utilisation de la fonction password_hash)
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+    // Requête SQL pour insérer les données dans la base
+    $sql = "INSERT INTO utilisateur (name, email, mots_passe) VALUES ('$name', '$email', '$hashed_password')";
+
+    // Exécuter la requête SQL
+    $resul = mysqli_query($connect, $sql);
+
+    if ($resul) {
+        // Rediriger ou afficher un message de succès
+        echo "Données ajoutées avec succès !";
+    } else {
+        // Afficher l'erreur en cas d'échec
+        echo "Échec : " . mysqli_error($connect);
+    }
+}
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
