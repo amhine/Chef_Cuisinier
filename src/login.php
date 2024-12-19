@@ -1,33 +1,30 @@
 <?php
-include './conexiondata.php';
+include './conexiondata.php'; 
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Récupérer les données du formulaire
+if (isset($_POST["submit"])) {
+   
     $email = $_POST['email'];
-    $password = $_POST['password'];
+    $password = $_POST['password']; 
 
-    // Échapper les entrées pour éviter les injections SQL
     $email = mysqli_real_escape_string($connect, $email);
     $password = mysqli_real_escape_string($connect, $password);
 
-    // Requête SQL pour vérifier l'utilisateur
-    $query = "SELECT * FROM utilisateur WHERE email = '$email'";
-    $result = mysqli_query($connect, $query);
+    $sql = "SELECT * FROM utilisateur WHERE email = '$email'";
+    $result = mysqli_query($connect, $sql);
 
-    // Vérifier si l'utilisateur existe et le mot de passe est correct
-    if ($result && mysqli_num_rows($result) > 0) {
+    if (mysqli_num_rows($result) > 0) {
         $user = mysqli_fetch_assoc($result);
-
-        // Comparer le mot de passe
-        if (password_verify($password, $user['pasword']) && $user['role'] === 'chef') {
-            // Rediriger vers le tableau de bord
+        
+        if (password_verify($password, $user['pasword'])) {
+            
             header("Location: dashbord.php");
-            exit();
         } else {
-            $error = "Email ou mot de passe incorrect.";
+            
+            $error = "Mot de passe incorrect.";
         }
     } else {
-        $error = "Utilisateur non trouvé.";
+        
+        $error = "Aucun compte trouvé avec cet email.";
     }
 }
 ?>
@@ -66,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="text-red-500 text-sm mt-2"><?php echo $error; ?></div>
       <?php endif; ?>
       <div class="mt-6">
-        <button type="submit" class="w-full rounded-md bg-black px-3 py-4 text-white hover:bg-gray-700 focus:outline-none">
+        <button type="submit" name="submit" class="w-full rounded-md bg-black px-3 py-4 text-white hover:bg-gray-700 focus:outline-none">
           Sign in
         </button>
       </div>
@@ -86,14 +83,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         let valid = true;
 
         const email = document.getElementById("email").value;
-        const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zAZ]{2,6}$/;
+        const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/; // Correction ici
         if (!emailRegex.test(email)) {
             document.getElementById("emailError").classList.remove("hidden");
             valid = false;
         }
 
         const password = document.getElementById("password").value;
-        const passwordRegex =  /^[a-zA-Z0-9\W_]+$/;
+        const passwordRegex = /^[a-zA-Z0-9\W_]+$/; // Correction ici
         if (!passwordRegex.test(password)) {
             document.getElementById("passwordError").classList.remove("hidden");
             valid = false;

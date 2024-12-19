@@ -15,14 +15,14 @@ if (isset($_POST["submit"])) {
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
    
-    $checkQuery = "SELECT * FROM utilisateur WHERE email = '$email'";
-    $checkResult = mysqli_query($connect, $checkQuery);
+    $verefication = "SELECT * FROM utilisateur WHERE email = '$email'";
+    $vrf_resultat = mysqli_query($connect, $verefication);
 
-    if (mysqli_num_rows($checkResult) > 0) {
-        // L'email est déjà utilisé
-        echo "<p class='text-red-500'>Cet email est déjà utilisé. Veuillez essayer un autre.</p>";
+    if (mysqli_num_rows($vrf_resultat) > 0) {
+       
+        // echo "<p class='text-red-500'>Cet email est déjà utilisé. Veuillez essayer un autre.</p>";
     } else {
-        // Requête SQL pour insérer les données dans la base
+        
         $sql = "INSERT INTO utilisateur (name, email, pasword) VALUES ('$name', '$email', '$hashed_password')";
 
         if (mysqli_query($connect, $sql)) {
