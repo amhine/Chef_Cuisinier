@@ -75,62 +75,78 @@
 
             <!-- Exemple de carte pour une réservation -->
             <div class="reservation-card bg-white border border-gray-300 rounded-lg shadow-lg p-6 hover:shadow-xl transition-transform transform hover:-translate-y-2">
-                <div class="flex flex-wrap justify-between gap-6">
-                    <!-- Carte menu 1 -->
-                    <div class="flex items-center w-full md:w-1/3">
-                        <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-1.jpg" alt="">
-                        <div class="flex-1 flex flex-col text-start pl-4">
-                            <div class="flex justify-between items-center border-b pb-2">
-                                <h5 class="font-medium text-lg">Chicken Burger</h5>
-                                <span class="text-primary font-semibold">$115</span>
-                            </div>
-                            <div class="flex justify-between items-center pt-2">
-                                <small class="italic text-gray-600 flex-1">
-                                    Ipsum ipsum clita erat amet dolor justo diam
-                                </small>
-                    
-                            </div>
-                        </div>
-                    </div>
-
-                
-                    <div class="flex items-center w-full md:w-1/3">
-                        <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-2.jpg" alt="">
-                        <div class="flex-1 flex flex-col text-start pl-4">
-                            <div class="flex justify-between items-center border-b pb-2">
-                                <h5 class="font-medium text-lg">Chicken Burger</h5>
-                                <span class="text-primary font-semibold">$115</span>
-                            </div>
-                            <div class="flex justify-between items-center pt-2">
-                                <small class="italic text-gray-600 flex-1">
-                                    Ipsum ipsum clita erat amet dolor justo diam
-                                </small>
-                   
-                            </div>
-                        </div>
-                    </div>
-
-            
-                    <div class="flex items-center w-full md:w-1/3">
-                        <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-3.jpg" alt="">
-                        <div class="flex-1 flex flex-col text-start pl-4">
-                            <div class="flex justify-between items-center border-b pb-2">
-                                <h5 class="font-medium text-lg">Chicken Burger</h5>
-                                <span class="text-primary font-semibold">$115</span>
-                            </div>
-                            <div class="flex justify-between items-center pt-2">
-                                <small class="italic text-gray-600 flex-1">
-                                    Ipsum ipsum clita erat amet dolor justo diam
-                                </small>
-                        
-                            </div>
-                        </div>
-                    </div>
-
-        
+    <div class="flex flex-wrap justify-between gap-6">
+        <!-- Carte menu 1 -->
+        <div class="flex items-center w-full ">
+            <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-1.jpg" alt="">
+            <div class="flex-1 flex flex-col text-start pl-4">
+                <div class="flex justify-between items-center border-b pb-2">
+                    <h5 class="font-medium text-lg">Chicken Burger</h5>
+                    <span class="text-primary font-semibold">$115</span>
                 </div>
-       
+                <div class="flex justify-between items-center pt-2">
+                    <small class="italic text-gray-600 flex-1">
+                        Ipsum ipsum clita erat amet dolor justo diam
+                    </small>
+                    <button class="text-white bg-blue-600 hover:bg-amber-700 transition-colors duration-300 px-4 py-2 w-24 rounded-3xl text-sm" role="button" aria-label="Accepter Chicken Burger">
+                Accepter
+            </button>
+            <button class="text-white bg-red-700 hover:bg-amber-700 transition-colors duration-300 px-4 py-2 w-24 rounded-3xl text-sm" role="button" aria-label="Refuser Chicken Burger">
+                Refuser
+            </button>
+                </div>
             </div>
+        </div>
+      
+
+        <!-- Carte menu 2 -->
+        <div class="flex items-center w-full ">
+            <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-2.jpg" alt="">
+            <div class="flex-1 flex flex-col text-start pl-4">
+                <div class="flex justify-between items-center border-b pb-2">
+                    <h5 class="font-medium text-lg">Chicken Burger</h5>
+                    <span class="text-primary font-semibold">$115</span>
+                </div>
+                <div class="flex justify-between items-center pt-2">
+                    <small class="italic text-gray-600 flex-1">
+                        Ipsum ipsum clita erat amet dolor justo diam
+                    </small>
+                    <button class="text-white bg-blue-600 hover:bg-amber-700 transition-colors duration-300 px-4 py-2 w-24 rounded-3xl text-sm" role="button" aria-label="Accepter Chicken Burger">
+                    Annuler
+            </button>
+            <button class="text-white bg-red-700 hover:bg-amber-700 transition-colors duration-300 px-4 py-2 w-24 rounded-3xl text-sm" role="button" aria-label="Refuser Chicken Burger">
+                Annuler
+            </button>
+                </div>
+            </div>
+        </div>
+       
+
+        <!-- Carte menu 3 -->
+        <div class="flex items-center w-full ">
+            <img class="flex-shrink-0 rounded w-20 h-16" src="../img/menu-3.jpg" alt="">
+            <div class="flex-1 flex flex-col text-start pl-4">
+                <div class="flex justify-between items-center border-b pb-2">
+                    <h5 class="font-medium text-lg">Chicken Burger</h5>
+                    <span class="text-primary font-semibold">$115</span>
+                </div>
+                <div class="flex justify-between items-center pt-2">
+                    <small class="italic text-gray-600 flex-1">
+                        Ipsum ipsum clita erat amet dolor justo diam
+                    </small>
+                    <button class="text-white bg-blue-600 hover:bg-amber-700 transition-colors duration-300 px-4 py-2 w-24 rounded-3xl text-sm" role="button" aria-label="Accepter Chicken Burger">
+                    Annuler
+            </button>
+            <button class="text-white bg-red-700 hover:bg-amber-700 transition-colors duration-300 px-4 py-2 w-24 rounded-3xl text-sm" role="button" aria-label="Refuser Chicken Burger">
+                Refuser
+            </button>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
             <h1 class="text-center text-4xl font-bold text-amber-600 mt-8">Informations de la réservation</h1>
             <div class="reservation-card bg-white border border-gray-300 rounded-lg shadow-lg p-6 hover:shadow-xl transition-transform transform hover:-translate-y-2">
     <div class="reservation-header flex flex-col gap-2 mb-4">
