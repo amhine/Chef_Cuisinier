@@ -88,12 +88,7 @@
                     <small class="italic text-gray-600 flex-1">
                         Ipsum ipsum clita erat amet dolor justo diam
                     </small>
-                    <button class="text-white bg-blue-600 hover:bg-amber-700 transition-colors duration-300 px-4 py-2 w-24 rounded-3xl text-sm" role="button" aria-label="Accepter Chicken Burger">
-                Accepter
-            </button>
-            <button class="text-white bg-red-700 hover:bg-amber-700 transition-colors duration-300 px-4 py-2 w-24 rounded-3xl text-sm" role="button" aria-label="Refuser Chicken Burger">
-                Refuser
-            </button>
+                    
                 </div>
             </div>
         </div>
@@ -111,12 +106,7 @@
                     <small class="italic text-gray-600 flex-1">
                         Ipsum ipsum clita erat amet dolor justo diam
                     </small>
-                    <button class="text-white bg-blue-600 hover:bg-amber-700 transition-colors duration-300 px-4 py-2 w-24 rounded-3xl text-sm" role="button" aria-label="Accepter Chicken Burger">
-                    Annuler
-            </button>
-            <button class="text-white bg-red-700 hover:bg-amber-700 transition-colors duration-300 px-4 py-2 w-24 rounded-3xl text-sm" role="button" aria-label="Refuser Chicken Burger">
-                Annuler
-            </button>
+                    
                 </div>
             </div>
         </div>
@@ -134,12 +124,7 @@
                     <small class="italic text-gray-600 flex-1">
                         Ipsum ipsum clita erat amet dolor justo diam
                     </small>
-                    <button class="text-white bg-blue-600 hover:bg-amber-700 transition-colors duration-300 px-4 py-2 w-24 rounded-3xl text-sm" role="button" aria-label="Accepter Chicken Burger">
-                    Annuler
-            </button>
-            <button class="text-white bg-red-700 hover:bg-amber-700 transition-colors duration-300 px-4 py-2 w-24 rounded-3xl text-sm" role="button" aria-label="Refuser Chicken Burger">
-                Refuser
-            </button>
+                    
                 </div>
             </div>
         </div>
@@ -150,10 +135,10 @@
             <h1 class="text-center text-4xl font-bold text-amber-600 mt-8">Informations de la réservation</h1>
             <div class="reservation-card bg-white border border-gray-300 rounded-lg shadow-lg p-6 hover:shadow-xl transition-transform transform hover:-translate-y-2">
     <div class="reservation-header flex flex-col gap-2 mb-4">
-        <p class="text-sm text-gray-600">Date : <span class="font-semibold">27 Juin 2024</span></p>
-        <p class="text-sm text-gray-600">Heure : <span class="font-semibold">20h00</span></p>
+        <p class="text-sm text-gray-600">Date et Heure: <span class="font-semibold">27 Juin 2024   20h00</span></p>
+        <!-- <p class="text-sm text-gray-600">Heure : <span class="font-semibold">20h00</span></p> -->
         <p class="text-sm text-gray-600">Nombre de personnes : <span class="font-semibold">2</span></p>
-        <p class="text-sm text-gray-600">Menu choisi : <span class="font-semibold">Menu Végétarien</span></p>
+        <!-- <p class="text-sm text-gray-600">Menu choisi : <span class="font-semibold">Menu Végétarien</span></p> -->
     </div>
     
     <div class="action-buttons flex gap-4 justify-start mt-4">
