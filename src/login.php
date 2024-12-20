@@ -2,31 +2,42 @@
 include './conexiondata.php'; 
 
 if (isset($_POST["submit"])) {
-   
-    $email = $_POST['email'];
-    $password = $_POST['password']; 
+  $email = $_POST['email'];
+  $password = $_POST['password']; 
 
-    $email = mysqli_real_escape_string($connect, $email);
-    $password = mysqli_real_escape_string($connect, $password);
+  
+  $email = mysqli_real_escape_string($connect, $email);
+  $password = mysqli_real_escape_string($connect, $password);
 
-    $sql = "SELECT * FROM utilisateur WHERE email = '$email'";
-    $result = mysqli_query($connect, $sql);
+  $sql = "SELECT * FROM utilisateur WHERE email = '$email'";
+  $result = mysqli_query($connect, $sql);
 
-    if (mysqli_num_rows($result) > 0) {
-        $user = mysqli_fetch_assoc($result);
-        
-        if (password_verify($password, $user['pasword'])) {
-            
-            header("Location: dashbord.php");
-        } else {
-            
-            $error = "Mot de passe incorrect.";
-        }
-    } else {
-        
-        $error = "Aucun compte trouvé avec cet email.";
-    }
+  if (mysqli_num_rows($result) > 0) {
+      $user = mysqli_fetch_assoc($result);
+
+      
+      if (password_verify($password, $user['pasword'])) {
+          
+          if ($user['role'] == 'client') {
+              
+              header("Location: index.php");
+          } elseif ($user['role'] == 'chef') {
+              
+              header("Location: dashbord.php");
+          } else {
+              
+              echo "Rôle non reconnu.";
+          }
+      } else {
+         
+          $error = "Mot de passe incorrect.";
+      }
+  } else {
+      
+      $error = "Aucun compte trouvé avec cet email.";
+  }
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -59,9 +70,7 @@ if (isset($_POST["submit"])) {
         </label>
         <span id="passwordError" class="text-red-500 text-sm hidden">Password invalid</span>
       </div>
-      <?php if (isset($error)): ?>
-        <div class="text-red-500 text-sm mt-2"><?php echo $error; ?></div>
-      <?php endif; ?>
+      
       <div class="mt-6">
         <button type="submit" name="submit" class="w-full rounded-md bg-black px-3 py-4 text-white hover:bg-gray-700 focus:outline-none">
           Sign in
@@ -69,7 +78,7 @@ if (isset($_POST["submit"])) {
       </div>
       <p class="mt-4 text-center text-sm text-gray-500">
         Don't have an account yet?
-        <a href="signup.php" class="font-semibold text-gray-600 hover:underline">Sign up</a>.
+        <a href="siginup.php" class="font-semibold text-gray-600 hover:underline">Sign up</a>.
       </p>
     </form>
   </div>

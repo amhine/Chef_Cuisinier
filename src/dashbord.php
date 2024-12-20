@@ -1,3 +1,39 @@
+<?php 
+include './conexiondata.php'; 
+
+if (isset($_POST["submit"])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $password = $_POST['pasword'];
+
+    
+    $name = mysqli_real_escape_string($connect, $name);
+    $email = mysqli_real_escape_string($connect, $email);
+    $password = mysqli_real_escape_string($connect, $password);
+
+   
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+   
+    $verefication = "SELECT * FROM utilisateur WHERE email = '$email'";
+    $vrf_resultat = mysqli_query($connect, $verefication);
+
+    if (mysqli_num_rows($vrf_resultat) > 0) {
+       
+        // echo "<p class='text-red-500'>Cet email est déjà utilisé. Veuillez essayer un autre.</p>";
+    } else {
+        
+        $sql = "INSERT INTO utilisateur (name, email, pasword) VALUES ('$name', '$email', '$hashed_password')";
+
+        if (mysqli_query($connect, $sql)) {
+            header("Location: index.php");
+            exit(); 
+        } else {
+            echo "<p class='text-red-500'>Erreur : " . mysqli_error($connect) . "</p>";
+        }
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +69,7 @@
     </header>
     <div class="overlay fixed inset-0 bg-indigo-900/50 z-40 hidden opacity-0 transition-opacity duration-300"></div>
     <form id="formulair" class="fixed top-0 left-0 w-full h-full bg-white bg-opacity-90 z-50 hidden flex items-center justify-center animate-slide-in">
-  <div class="max-w-[800px] w-full bg-white rounded-lg shadow-lg overflow-hidden">
+  <div class="max-w-[800px] w-full max-h-[500px]  bg-white rounded-lg shadow-lg overflow-y-scroll ">
     <div class="px-8 py-4 bg-amber-600 text-white">
       <h1 class="flex justify-center font-bold text-white text-3xl">Menu</h1>
     </div>
@@ -59,6 +95,16 @@
         <input class="appearance-none border border-gray-400 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent" type="number" placeholder="Prix">
         <span id="prixError" class="text-red-500 text-sm hidden">Prix invalid</span>  
     </div>
+
+    <div class="mb-6">
+    <label for="food" class="block text-gray-700 font-semibold mb-2">Food:</label>
+    <select id="food" name="food" class="w-full p-2 mb-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <option value="1">Plats principaux</option>
+        <option value="2">Salad</option>
+        <option value="3">Dessert</option>
+    </select>
+</div>
+
       <div class="flex justify-between mt-8">
         <a id="hideForm" class="text-white bg-red-600 w-40 rounded-lg py-3 hover:bg-red-800 cursor-pointer flex justify-center">
           Cancel
@@ -70,6 +116,8 @@
     </div>
   </div>
 </form>
+
+
     <div class="pt-16 max-w-7xl mx-auto flex">
         <aside class="sidebar fixed lg:static w-[240px] bg-indigo-50 h-[calc(100vh-4rem)] lg:h-auto transform -translate-x-full lg:translate-x-0 transition-transform duration-300 z-45 overflow-y-auto p-4">
             <div class="bg-white rounded-xl shadow-lg mb-6 p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
@@ -211,6 +259,10 @@
 <div class="reservations-container container mx-auto flex flex-col gap-8 py-8">
     <div class="reservation-card bg-white border border-gray-300 rounded-lg shadow-lg p-6 hover:shadow-xl transition-transform transform hover:-translate-y-2">
         <h1 class="text-center text-4xl font-bold text-amber-600 mt-4 mb-8">Nouvelle Menu</h1>
+        <div class="relative  w-full h-24">
+   
+</div>
+        
         <div class="flex flex-wrap justify-between gap-6">
             <!-- Carte menu 1 -->
             <div class="flex items-center w-full">
