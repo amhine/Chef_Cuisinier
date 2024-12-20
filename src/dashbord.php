@@ -1,39 +1,45 @@
-<?php 
-include './conexiondata.php'; 
+<?php
+
+include './conexiondata.php';
 
 if (isset($_POST["submit"])) {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $password = $_POST['pasword'];
+    
+   
+    $nom = $connect->real_escape_string($_POST['nom']);
+    $description = $connect->real_escape_string($_POST['description']);
+    $url = $connect->real_escape_string($_POST['url']); 
+    $prix = $connect->real_escape_string($_POST['prix']);
+    $food = $connect->real_escape_string($_POST['food']);
+    
+   
+    if (empty($nom) || empty($description) || empty($url) || empty($prix) || empty($food)) {
+        echo "Tous les champs sont obligatoires.";
+        exit;
+    }
+
+    if (!is_numeric($prix)) {
+        echo "Le prix doit être un nombre valide.";
+        exit;
+    }
 
     
-    $name = mysqli_real_escape_string($connect, $name);
-    $email = mysqli_real_escape_string($connect, $email);
-    $password = mysqli_real_escape_string($connect, $password);
+    $sql = "INSERT INTO plat (nom, description, url, prix, food) 
+            VALUES ('$nom', '$description', '$url', '$prix', '$food')";
 
-   
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-
-   
-    $verefication = "SELECT * FROM utilisateur WHERE email = '$email'";
-    $vrf_resultat = mysqli_query($connect, $verefication);
-
-    if (mysqli_num_rows($vrf_resultat) > 0) {
-       
-        // echo "<p class='text-red-500'>Cet email est déjà utilisé. Veuillez essayer un autre.</p>";
+    
+    if ($connect->query($sql) === TRUE) {
+        // echo "Nouveau menu ajouté avec succès";
     } else {
-        
-        $sql = "INSERT INTO utilisateur (name, email, pasword) VALUES ('$name', '$email', '$hashed_password')";
-
-        if (mysqli_query($connect, $sql)) {
-            header("Location: index.php");
-            exit(); 
-        } else {
-            echo "<p class='text-red-500'>Erreur : " . mysqli_error($connect) . "</p>";
-        }
+        echo "Erreur: " . $sql . "<br>" . $connect->error;
     }
+
+    
+    $connect->close();
 }
 ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,42 +74,42 @@ if (isset($_POST["submit"])) {
         </div>
     </header>
     <div class="overlay fixed inset-0 bg-indigo-900/50 z-40 hidden opacity-0 transition-opacity duration-300"></div>
-    <form id="formulair" class="fixed top-0 left-0 w-full h-full bg-white bg-opacity-90 z-50 hidden flex items-center justify-center animate-slide-in">
-  <div class="max-w-[800px] w-full max-h-[500px]  bg-white rounded-lg shadow-lg overflow-y-scroll ">
+    <form id="formulair" class="fixed top-0 left-0 w-full h-full bg-white bg-opacity-90 z-50 hidden flex items-center justify-center animate-slide-in" method="POST" action="">
+  <div class="max-w-[800px] w-full max-h-[500px] bg-white rounded-lg shadow-lg overflow-y-scroll">
     <div class="px-8 py-4 bg-amber-600 text-white">
       <h1 class="flex justify-center font-bold text-white text-3xl">Menu</h1>
     </div>
     <div class="px-8 py-6">
       <!-- Contenu du formulaire ici -->
       <div class="mb-6">
-        <label class="block text-gray-700 font-semibold mb-2" for="nome" id="name">Nom :</label>
-        <input class="appearance-none border border-gray-400 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent" id="text" type="text" placeholder="Nom">
+        <label class="block text-gray-700 font-semibold mb-2" for="nom">Nom :</label>
+        <input class="appearance-none border border-gray-400 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent" id="nom" name="nom" type="text" placeholder="Nom" required>
         <span id="nameError" class="text-red-500 text-sm hidden">Name invalid</span>
-    </div>
+      </div>
       <div class="mb-6">
-        <label class="block text-gray-700 font-semibold mb-2" for="description" id="description">Description :</label>
-        <input class="appearance-none border border-gray-400 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent" id="description" type="text" placeholder="Description">
-        <span id="descriptionError" class="text-red-500 text-sm hidden">Description invalid</span>  
-    </div>
+        <label class="block text-gray-700 font-semibold mb-2" for="description">Description :</label>
+        <input class="appearance-none border border-gray-400 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent" id="description" name="description" type="text" placeholder="Description" required>
+        <span id="descriptionError" class="text-red-500 text-sm hidden">Description invalid</span>
+      </div>
       <div class="mb-6">
-        <label class="block text-gray-700 font-semibold mb-2" for="url" id="photo">URL :</label>
-        <input class="appearance-none border border-gray-400 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent" id="url" type="text" placeholder="https://">
-        <span id="photoError" class="text-red-500 text-sm hidden">Image invalid</span>  
-    </div>
+        <label class="block text-gray-700 font-semibold mb-2" for="url">URL :</label>
+        <input class="appearance-none border border-gray-400 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent" id="url" name="url" type="text" placeholder="https://" required>
+        <span id="photoError" class="text-red-500 text-sm hidden">Image invalid</span>
+      </div>
       <div class="mb-6">
-        <label class="block text-gray-700 font-semibold mb-2" for="prix" id="prix">Prix :</label>
-        <input class="appearance-none border border-gray-400 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent" type="number" placeholder="Prix">
-        <span id="prixError" class="text-red-500 text-sm hidden">Prix invalid</span>  
-    </div>
+        <label class="block text-gray-700 font-semibold mb-2" for="prix">Prix :</label>
+        <input class="appearance-none border border-gray-400 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent" id="prix" name="prix" type="number" placeholder="Prix" required>
+        <span id="prixError" class="text-red-500 text-sm hidden">Prix invalid</span>
+      </div>
 
-    <div class="mb-6">
-    <label for="food" class="block text-gray-700 font-semibold mb-2">Food:</label>
-    <select id="food" name="food" class="w-full p-2 mb-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
-        <option value="1">Plats principaux</option>
-        <option value="2">Salad</option>
-        <option value="3">Dessert</option>
-    </select>
-</div>
+      <div class="mb-6">
+        <label for="food" class="block text-gray-700 font-semibold mb-2">Food:</label>
+        <select id="food" name="food" class="w-full p-2 mb-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <option value="1">Plats principaux</option>
+          <option value="2">Salad</option>
+          <option value="3">Dessert</option>
+        </select>
+      </div>
 
       <div class="flex justify-between mt-8">
         <a id="hideForm" class="text-white bg-red-600 w-40 rounded-lg py-3 hover:bg-red-800 cursor-pointer flex justify-center">
@@ -116,6 +122,7 @@ if (isset($_POST["submit"])) {
     </div>
   </div>
 </form>
+
 
 
     <div class="pt-16 max-w-7xl mx-auto flex">
