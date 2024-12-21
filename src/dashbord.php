@@ -2,40 +2,29 @@
 
 include './conexiondata.php';
 
-if (isset($_POST["submit"])) {
-    
-   
-    $nom = $connect->real_escape_string($_POST['nom']);
-    $description = $connect->real_escape_string($_POST['description']);
-    $url = $connect->real_escape_string($_POST['url']); 
-    $prix = $connect->real_escape_string($_POST['prix']);
-    $food = $connect->real_escape_string($_POST['food']);
-    
-   
-    if (empty($nom) || empty($description) || empty($url) || empty($prix) || empty($food)) {
-        echo "Tous les champs sont obligatoires.";
-        exit;
-    }
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    if (!is_numeric($prix)) {
-        echo "Le prix doit être un nombre valide.";
-        exit;
-    }
+    $nom = $_POST['nom']; 
+    $description = $_POST['description'];
+    $url = $_POST['url'];
+    $prix = $_POST['prix'];
+    $food = $_POST['food'];
+    
 
     
     $sql = "INSERT INTO plat (nom, description, url, prix, food) 
             VALUES ('$nom', '$description', '$url', '$prix', '$food')";
-
     
     if ($connect->query($sql) === TRUE) {
-        // echo "Nouveau menu ajouté avec succès";
+        header("Location: dashbord.php");
+        exit();
     } else {
-        echo "Erreur: " . $sql . "<br>" . $connect->error;
+        echo "Erreur : " . $sql . "<br>" . $connect->error;
     }
-
-    
-    $connect->close();
 }
+
+
+
 ?>
 
 
@@ -265,44 +254,50 @@ if (isset($_POST["submit"])) {
 
 <div class="reservations-container container mx-auto flex flex-col gap-8 py-8">
     <div class="reservation-card bg-white border border-gray-300 rounded-lg shadow-lg p-6 hover:shadow-xl transition-transform transform hover:-translate-y-2">
-        <h1 class="text-center text-4xl font-bold text-amber-600 mt-4 mb-8">Nouvelle Menu</h1>
-        <div class="relative  w-full h-24">
-   
-</div>
+        <h1 class="text-center text-4xl font-bold text-amber-600 mt-4 mb-4">Nouvelle Menu</h1>
+       
         
-        <div class="flex flex-wrap justify-between gap-6">
-            <!-- Carte menu 1 -->
-            <div class="flex items-center w-full">
-                <img class="flex-shrink-0 rounded w-20 h-16" src="URL" alt="Image du plat">
+<div class="flex flex-wrap justify-between gap-6">
+    <!-- Cartes des menus -->
+    <?php
+    
+    include './conexiondata.php';
+
+    
+    $sql = "SELECT * FROM plat";
+    $result = $connect->query($sql);
+
+    
+    if ($result && $result->num_rows > 0) {
+        
+        while ($row = $result->fetch_assoc()) {
+            ?>
+            <div class="flex items-center w-full mb-4">
+                <img class="flex-shrink-0 rounded w-20 h-16" src="<?= htmlspecialchars($row['url']); ?>" alt="Image du plat">
                 <div class="flex-1 flex flex-col text-start pl-4">
                     <div class="flex justify-between items-center border-b pb-2">
-                        <h5 class="font-medium text-lg">NOM</h5>
-                        <span class="text-primary font-semibold">PRIX</span>
+                        <h5 class="font-medium text-lg"><?= htmlspecialchars($row['nom']); ?></h5>
+                        <span class="text-primary font-semibold"><?= htmlspecialchars($row['prix']); ?> MAD</span>
                     </div>
                     <div class="flex justify-between items-center pt-2">
-                        <small class="italic text-gray-600 flex-1">Description</small>
-                        <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300 px-4 py-2 w-24 rounded-3xl text-sm" role="button" aria-label="Order Chicken Burger">
+                        <small class="italic text-gray-600 flex-1"><?= htmlspecialchars($row['description']); ?></small>
+                        <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300 px-4 py-2 w-24 rounded-3xl text-sm" role="button" aria-label="Commander <?= htmlspecialchars($row['nom']); ?>">
                             Order
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="flex items-center w-full">
-                <img class="flex-shrink-0 rounded w-20 h-16" src="URL" alt="Image du plat">
-                <div class="flex-1 flex flex-col text-start pl-4">
-                    <div class="flex justify-between items-center border-b pb-2">
-                        <h5 class="font-medium text-lg">NOM</h5>
-                        <span class="text-primary font-semibold">PRIX</span>
-                    </div>
-                    <div class="flex justify-between items-center pt-2">
-                        <small class="italic text-gray-600 flex-1">Description</small>
-                        <button class="text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-300 px-4 py-2 w-24 rounded-3xl text-sm" role="button" aria-label="Order Chicken Burger">
-                            Order
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <?php
+        }
+    } else {
+        echo "<p class='text-gray-600 italic'>Aucun plat trouvé.</p>";
+    }
+
+    
+    $connect->close();
+    ?>
+</div>
+
     </div>
 </div>
 
